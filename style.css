@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family:'Poppins', sans-serif;
+    width: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+
+body {
+    /*background-image: url(../Portfólio/imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background: url(../Portfólio/imagens/sky.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+    height: 200vh;
+    background: linear-gradient(to top, #8e5d52, #ffc0cb);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /*border-bottom: 2px solid green;*/
+    /*box-shadow: 1px 1px 10px 1px #ffffff;*/
+    border-bottom: 12px ridge #ffffff;
+    margin-bottom: 45px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+    /*border-right: 2px dashed #ffffff;*/
+}
+
+/*header ul li:first-child {
+    padding: 5px;
+    border-left: 2px dashed;
+}*/
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #8e5d52;
+    text-decoration: underline;
+}
+
+.container  {
+    text-align: center;
+    max-width: 100%;
+}
+
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+ @keyframes blink {
+    to {
+        visibility: hidden;
+    }
+ }
+
+ #animation {
+    transition: 300ms;
+ }
+
+ .rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+ }
+
+ .active {
+    display: block !important;
+ }
+
+#about p {
+    max-width: 600px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    /*border: thick double;
+    padding: 25px;*/
+}
+
+.form p {
+    width: auto;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #ffc0cb62 50%, #8e5d52 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #464646;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+
+
+.flex {
+    display: inline-flex;
+    width: 100%;
+    padding: 55px 10px;
+    justify-content: center;
+}
+
+.flex div {
+   margin: 1em;
+}
+
+.flex div img{
+    border-radius: 25%;
+
+}
+
+ */
+/* .flex div {
+    border: 1px solid rgb(241, 159, 159);
+    margin: 15px;
+    background-color: #8e5d52);
+    /*flex-basis: 100%;
+}*/
+
+p {
+    width: 250px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+    .flex{
+        width: 100%;
+        display: inline-block;
+
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+    .form{
+        width: 100%;
+
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
+
+
